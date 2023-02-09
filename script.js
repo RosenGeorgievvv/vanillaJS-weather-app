@@ -21,6 +21,8 @@ const searchCity = async () => {
   showWeatherData(data);
 };
 
+
+
 const showWeatherData = (weatherData) => {
   document.getElementById("weather-type").innerHTML = weatherData.currentConditions.conditions;
   document.getElementById("temp").innerHTML = weatherData.currentConditions.temp;
