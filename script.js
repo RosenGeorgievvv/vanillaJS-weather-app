@@ -22,10 +22,11 @@ const searchCity = async () => {
 };
 
 
-
 const showWeatherData = (weatherData) => {
+	document.getElementById("city-name").innerHTML = weatherData.address
   document.getElementById("weather-type").innerHTML = weatherData.currentConditions.conditions;
   document.getElementById("temp").innerHTML = weatherData.currentConditions.temp;
   document.getElementById("sunrise").innerHTML = weatherData.currentConditions.sunrise;
   document.getElementById("sunset").innerHTML = weatherData.currentConditions.sunset;
+  
 };
